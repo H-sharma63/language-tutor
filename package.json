@@ -1,0 +1,55 @@
+{
+  "name": "language-tutor",
+  "version": "0.1.0",
+  "description": "Local-first AI language tutor - practice any language with privacy",
+  "type": "module",
+  "bin": {
+    "language-tutor": "./dist/index.js"
+  },
+  "scripts": {
+    "dev": "tsup --watch --onSuccess \"node dist/index.js\"",
+    "build": "tsup",
+    "start": "node dist/index.js",
+    "test": "vitest",
+    "lint": "eslint src --ext ts,tsx"
+  },
+  "keywords": [
+    "cli",
+    "tui",
+    "language",
+    "learning",
+    "ai",
+    "tutor",
+    "privacy",
+    "offline"
+  ],
+  "author": "Harshit",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "dist",
+    "templates"
+  ],
+  "dependencies": {
+    "better-sqlite3": "^11.7.2",
+    "chalk": "^5.4.1",
+    "commander": "^12.1.0",
+    "execa": "^9.5.2",
+    "ink": "^5.0.1",
+    "ink-select-input": "^6.2.0",
+    "ink-text-input": "^6.0.0",
+    "ora": "^8.1.1",
+    "react": "^18.3.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.11",
+    "@types/node": "^22.9.0",
+    "@types/react": "^18.3.12",
+    "tsup": "^8.3.5",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.4"
+  }
+}
