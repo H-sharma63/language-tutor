@@ -25,7 +25,7 @@ A **local-first AI language tutor** that runs in your terminal. Practice 15+ lan
 
 ```bash
 # Clone and install
-git clone <your-repo>
+git clone https://github.com/H-sharma63/language-tutor
 cd language-tutor
 npm install
 
